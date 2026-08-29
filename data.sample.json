@@ -1,0 +1,4049 @@
+{
+ "demo": true,
+ "generated_at": "2026-08-28T12:23:51+00:00",
+ "source": {
+  "name": "国立健康危機管理研究機構（JIHS）感染症発生動向調査 週報（IDWR）速報データ",
+  "url": "https://id-info.jihs.go.jp/surveillance/idwr/index.html",
+  "note": "掲載値は速報値です。後日、週報および年報で修正されることがあります。"
+ },
+ "diseases": {
+  "hiv": "HIV",
+  "syphilis": "梅毒",
+  "hepatitis_a": "A型肝炎",
+  "mpox": "エムポックス"
+ },
+ "weeks": [
+  {
+   "year": 2025,
+   "week": 1,
+   "start": "2024-12-30",
+   "end": "2025-01-05",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 16
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 7
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 130,
+      "cum": 130
+     },
+     "tokyo": {
+      "week": 23,
+      "cum": 23
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 5
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 2
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 6
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 1
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 2,
+   "start": "2025-01-06",
+   "end": "2025-01-12",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 24,
+      "cum": 40
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 13
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 155,
+      "cum": 285
+     },
+     "tokyo": {
+      "week": 27,
+      "cum": 50
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 1,
+      "cum": 6
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 6
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 10
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 3,
+   "start": "2025-01-13",
+   "end": "2025-01-19",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 7,
+      "cum": 47
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 13
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 104,
+      "cum": 389
+     },
+     "tokyo": {
+      "week": 22,
+      "cum": 72
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 12,
+      "cum": 18
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 8
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 14
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 4,
+   "start": "2025-01-20",
+   "end": "2025-01-26",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 66
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 20
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 113,
+      "cum": 502
+     },
+     "tokyo": {
+      "week": 39,
+      "cum": 111
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 32
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 13
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 15
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 5,
+   "start": "2025-01-27",
+   "end": "2025-02-02",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 81
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 25
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 165,
+      "cum": 667
+     },
+     "tokyo": {
+      "week": 27,
+      "cum": 138
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 40
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 14
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 16
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 4
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 6,
+   "start": "2025-02-03",
+   "end": "2025-02-09",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 13,
+      "cum": 94
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 31
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 157,
+      "cum": 824
+     },
+     "tokyo": {
+      "week": 14,
+      "cum": 152
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 11,
+      "cum": 51
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 19
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 16
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 4
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 7,
+   "start": "2025-02-10",
+   "end": "2025-02-16",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 111
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 34
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 159,
+      "cum": 983
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 177
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 2,
+      "cum": 53
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 23
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 21
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 5
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 8,
+   "start": "2025-02-17",
+   "end": "2025-02-23",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 26,
+      "cum": 137
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 41
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 144,
+      "cum": 1127
+     },
+     "tokyo": {
+      "week": 15,
+      "cum": 192
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 67
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 24
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 22
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 5
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 9,
+   "start": "2025-02-24",
+   "end": "2025-03-02",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 12,
+      "cum": 149
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 45
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 191,
+      "cum": 1318
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 201
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 2,
+      "cum": 69
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 27
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 7,
+      "cum": 29
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 6
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 10,
+   "start": "2025-03-03",
+   "end": "2025-03-09",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 155
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 45
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 154,
+      "cum": 1472
+     },
+     "tokyo": {
+      "week": 20,
+      "cum": 221
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 4,
+      "cum": 73
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 31
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 35
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 7
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 11,
+   "start": "2025-03-10",
+   "end": "2025-03-16",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 174
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 52
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 203,
+      "cum": 1675
+     },
+     "tokyo": {
+      "week": 30,
+      "cum": 251
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 87
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 35
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 35
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 9
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 12,
+   "start": "2025-03-17",
+   "end": "2025-03-23",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 23,
+      "cum": 197
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 59
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 61,
+      "cum": 1736
+     },
+     "tokyo": {
+      "week": 20,
+      "cum": 271
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 16,
+      "cum": 103
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 35
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 37
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 11
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 13,
+   "start": "2025-03-24",
+   "end": "2025-03-30",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 10,
+      "cum": 207
+     },
+     "tokyo": {
+      "week": 10,
+      "cum": 69
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 162,
+      "cum": 1898
+     },
+     "tokyo": {
+      "week": 24,
+      "cum": 295
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 12,
+      "cum": 115
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 39
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 40
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 14,
+   "start": "2025-03-31",
+   "end": "2025-04-06",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 14,
+      "cum": 221
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 73
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 181,
+      "cum": 2079
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 321
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 120
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 43
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 7,
+      "cum": 47
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 15,
+   "start": "2025-04-07",
+   "end": "2025-04-13",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 9,
+      "cum": 230
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 78
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 134,
+      "cum": 2213
+     },
+     "tokyo": {
+      "week": 23,
+      "cum": 344
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 19,
+      "cum": 139
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 43
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 53
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 16,
+   "start": "2025-04-14",
+   "end": "2025-04-20",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 13,
+      "cum": 243
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 85
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 185,
+      "cum": 2398
+     },
+     "tokyo": {
+      "week": 32,
+      "cum": 376
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 152
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 46
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 56
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 14
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 17,
+   "start": "2025-04-21",
+   "end": "2025-04-27",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 259
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 91
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 162,
+      "cum": 2560
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 402
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 15,
+      "cum": 167
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 50
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 9,
+      "cum": 65
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 18,
+   "start": "2025-04-28",
+   "end": "2025-05-04",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 274
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 95
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 139,
+      "cum": 2699
+     },
+     "tokyo": {
+      "week": 33,
+      "cum": 435
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 175
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 53
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 8,
+      "cum": 73
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 19,
+   "start": "2025-05-05",
+   "end": "2025-05-11",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 11,
+      "cum": 285
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 101
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 155,
+      "cum": 2854
+     },
+     "tokyo": {
+      "week": 27,
+      "cum": 462
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 183
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 57
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 76
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 20,
+   "start": "2025-05-12",
+   "end": "2025-05-18",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 32,
+      "cum": 317
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 108
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 117,
+      "cum": 2971
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 487
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 9,
+      "cum": 192
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 59
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 76
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 21,
+   "start": "2025-05-19",
+   "end": "2025-05-25",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 24,
+      "cum": 341
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 110
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 137,
+      "cum": 3108
+     },
+     "tokyo": {
+      "week": 33,
+      "cum": 520
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 16,
+      "cum": 208
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 64
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 76
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 22,
+   "start": "2025-05-26",
+   "end": "2025-06-01",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 356
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 117
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 183,
+      "cum": 3291
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 524
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 17,
+      "cum": 225
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 64
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 81
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 23,
+   "start": "2025-06-02",
+   "end": "2025-06-08",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 375
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 126
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 134,
+      "cum": 3425
+     },
+     "tokyo": {
+      "week": 27,
+      "cum": 551
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 15,
+      "cum": 240
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 67
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 83
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 17
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 24,
+   "start": "2025-06-09",
+   "end": "2025-06-15",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 24,
+      "cum": 399
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 131
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 249,
+      "cum": 3674
+     },
+     "tokyo": {
+      "week": 16,
+      "cum": 567
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 16,
+      "cum": 256
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 69
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 86
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 18
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 25,
+   "start": "2025-06-16",
+   "end": "2025-06-22",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 418
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 138
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 78,
+      "cum": 3752
+     },
+     "tokyo": {
+      "week": 13,
+      "cum": 580
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 270
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 70
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 86
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 18
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 26,
+   "start": "2025-06-23",
+   "end": "2025-06-29",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 25,
+      "cum": 443
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 146
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 198,
+      "cum": 3950
+     },
+     "tokyo": {
+      "week": 18,
+      "cum": 598
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 11,
+      "cum": 281
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 70
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 91
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 20
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 27,
+   "start": "2025-06-30",
+   "end": "2025-07-06",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 12,
+      "cum": 455
+     },
+     "tokyo": {
+      "week": 10,
+      "cum": 156
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 179,
+      "cum": 4129
+     },
+     "tokyo": {
+      "week": 24,
+      "cum": 622
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 0,
+      "cum": 281
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 75
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 93
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 20
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 28,
+   "start": "2025-07-07",
+   "end": "2025-07-13",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 20,
+      "cum": 475
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 163
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 199,
+      "cum": 4328
+     },
+     "tokyo": {
+      "week": 17,
+      "cum": 639
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 17,
+      "cum": 298
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 80
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 7,
+      "cum": 100
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 20
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 29,
+   "start": "2025-07-14",
+   "end": "2025-07-20",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 13,
+      "cum": 488
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 172
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 144,
+      "cum": 4472
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 665
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 19,
+      "cum": 317
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 82
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 100
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 20
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 30,
+   "start": "2025-07-21",
+   "end": "2025-07-27",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 494
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 180
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 152,
+      "cum": 4624
+     },
+     "tokyo": {
+      "week": 21,
+      "cum": 686
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 10,
+      "cum": 327
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 86
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 103
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 22
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 31,
+   "start": "2025-07-28",
+   "end": "2025-08-03",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 511
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 189
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 199,
+      "cum": 4823
+     },
+     "tokyo": {
+      "week": 38,
+      "cum": 724
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 6,
+      "cum": 333
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 90
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 103
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 22
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 32,
+   "start": "2025-08-04",
+   "end": "2025-08-10",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 517
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 198
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 90,
+      "cum": 4913
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 749
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 9,
+      "cum": 342
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 92
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 104
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 23
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 33,
+   "start": "2025-08-11",
+   "end": "2025-08-17",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 28,
+      "cum": 545
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 204
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 161,
+      "cum": 5074
+     },
+     "tokyo": {
+      "week": 34,
+      "cum": 783
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 9,
+      "cum": 351
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 92
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 105
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 25
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 34,
+   "start": "2025-08-18",
+   "end": "2025-08-24",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 8,
+      "cum": 553
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 208
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 180,
+      "cum": 5254
+     },
+     "tokyo": {
+      "week": 32,
+      "cum": 815
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 11,
+      "cum": 362
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 96
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 108
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 25
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 35,
+   "start": "2025-08-25",
+   "end": "2025-08-31",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 8,
+      "cum": 561
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 212
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 176,
+      "cum": 5430
+     },
+     "tokyo": {
+      "week": 21,
+      "cum": 836
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 367
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 97
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 108
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 25
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 36,
+   "start": "2025-09-01",
+   "end": "2025-09-07",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 10,
+      "cum": 571
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 219
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 45,
+      "cum": 5475
+     },
+     "tokyo": {
+      "week": 28,
+      "cum": 864
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 7,
+      "cum": 374
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 97
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 113
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 25
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 37,
+   "start": "2025-09-08",
+   "end": "2025-09-14",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 4,
+      "cum": 575
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 222
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 151,
+      "cum": 5626
+     },
+     "tokyo": {
+      "week": 22,
+      "cum": 886
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 15,
+      "cum": 389
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 101
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 117
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 26
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 38,
+   "start": "2025-09-15",
+   "end": "2025-09-21",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 26,
+      "cum": 601
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 229
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 158,
+      "cum": 5784
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 895
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 16,
+      "cum": 405
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 106
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 119
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 26
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 39,
+   "start": "2025-09-22",
+   "end": "2025-09-28",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 29,
+      "cum": 630
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 229
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 158,
+      "cum": 5942
+     },
+     "tokyo": {
+      "week": 45,
+      "cum": 940
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 410
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 110
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 8,
+      "cum": 127
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 26
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 40,
+   "start": "2025-09-29",
+   "end": "2025-10-05",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 21,
+      "cum": 651
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 237
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 103,
+      "cum": 6045
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 965
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 12,
+      "cum": 422
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 114
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 129
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 26
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 41,
+   "start": "2025-10-06",
+   "end": "2025-10-12",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 11,
+      "cum": 662
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 241
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 175,
+      "cum": 6220
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 991
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 427
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 115
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 11,
+      "cum": 140
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 28
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 42,
+   "start": "2025-10-13",
+   "end": "2025-10-19",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 21,
+      "cum": 683
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 241
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 164,
+      "cum": 6384
+     },
+     "tokyo": {
+      "week": 29,
+      "cum": 1020
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 21,
+      "cum": 448
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 118
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 142
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 29
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 43,
+   "start": "2025-10-20",
+   "end": "2025-10-26",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 689
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 250
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 152,
+      "cum": 6536
+     },
+     "tokyo": {
+      "week": 20,
+      "cum": 1040
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 18,
+      "cum": 466
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 124
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 142
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 29
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 44,
+   "start": "2025-10-27",
+   "end": "2025-11-02",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 708
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 256
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 124,
+      "cum": 6660
+     },
+     "tokyo": {
+      "week": 18,
+      "cum": 1058
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 23,
+      "cum": 489
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 129
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 142
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 29
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 45,
+   "start": "2025-11-03",
+   "end": "2025-11-09",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 28,
+      "cum": 736
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 264
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 212,
+      "cum": 6872
+     },
+     "tokyo": {
+      "week": 32,
+      "cum": 1090
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 494
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 132
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 142
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 29
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 46,
+   "start": "2025-11-10",
+   "end": "2025-11-16",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 753
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 271
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 110,
+      "cum": 6982
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 1115
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 507
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 135
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 146
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 30
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 47,
+   "start": "2025-11-17",
+   "end": "2025-11-23",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 769
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 279
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 141,
+      "cum": 7123
+     },
+     "tokyo": {
+      "week": 19,
+      "cum": 1134
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 7,
+      "cum": 514
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 137
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 148
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 31
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 48,
+   "start": "2025-11-24",
+   "end": "2025-11-30",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 786
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 285
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 134,
+      "cum": 7257
+     },
+     "tokyo": {
+      "week": 15,
+      "cum": 1149
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 527
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 142
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 152
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 31
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 49,
+   "start": "2025-12-01",
+   "end": "2025-12-07",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 20,
+      "cum": 806
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 288
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 64,
+      "cum": 7321
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 1175
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 5,
+      "cum": 532
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 146
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 152
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 31
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 50,
+   "start": "2025-12-08",
+   "end": "2025-12-14",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 11,
+      "cum": 817
+     },
+     "tokyo": {
+      "week": 10,
+      "cum": 298
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 124,
+      "cum": 7445
+     },
+     "tokyo": {
+      "week": 15,
+      "cum": 1190
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 6,
+      "cum": 538
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 150
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 156
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 32
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 51,
+   "start": "2025-12-15",
+   "end": "2025-12-21",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 26,
+      "cum": 843
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 306
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 139,
+      "cum": 7584
+     },
+     "tokyo": {
+      "week": 30,
+      "cum": 1220
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 20,
+      "cum": 558
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 154
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 162
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 32
+     }
+    }
+   }
+  },
+  {
+   "year": 2025,
+   "week": 52,
+   "start": "2025-12-22",
+   "end": "2025-12-28",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 860
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 314
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 128,
+      "cum": 7712
+     },
+     "tokyo": {
+      "week": 34,
+      "cum": 1254
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 572
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 158
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 164
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 35
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 1,
+   "start": "2025-12-29",
+   "end": "2026-01-04",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 25,
+      "cum": 25
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 5
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 143,
+      "cum": 143
+     },
+     "tokyo": {
+      "week": 46,
+      "cum": 46
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 8
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 4
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 5
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 1
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 2,
+   "start": "2026-01-05",
+   "end": "2026-01-11",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 10,
+      "cum": 35
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 11
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 154,
+      "cum": 297
+     },
+     "tokyo": {
+      "week": 35,
+      "cum": 81
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 15,
+      "cum": 23
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 7
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 10
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 3,
+   "start": "2026-01-12",
+   "end": "2026-01-18",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 54
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 17
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 130,
+      "cum": 427
+     },
+     "tokyo": {
+      "week": 31,
+      "cum": 112
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 4,
+      "cum": 27
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 8
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 13
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 4,
+   "start": "2026-01-19",
+   "end": "2026-01-25",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 69
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 17
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 112,
+      "cum": 539
+     },
+     "tokyo": {
+      "week": 30,
+      "cum": 142
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 41
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 10
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 15
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 2
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 5,
+   "start": "2026-01-26",
+   "end": "2026-02-01",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 28,
+      "cum": 97
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 24
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 183,
+      "cum": 722
+     },
+     "tokyo": {
+      "week": 18,
+      "cum": 160
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 9,
+      "cum": 50
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 10
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 5,
+      "cum": 20
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 6,
+   "start": "2026-02-02",
+   "end": "2026-02-08",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 103
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 29
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 165,
+      "cum": 887
+     },
+     "tokyo": {
+      "week": 11,
+      "cum": 171
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 0,
+      "cum": 50
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 10
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 21
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 7,
+   "start": "2026-02-09",
+   "end": "2026-02-15",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 18,
+      "cum": 121
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 35
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 165,
+      "cum": 1052
+     },
+     "tokyo": {
+      "week": 31,
+      "cum": 202
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 20,
+      "cum": 70
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 15
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 21
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 8,
+   "start": "2026-02-16",
+   "end": "2026-02-22",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 11,
+      "cum": 132
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 37
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 136,
+      "cum": 1188
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 228
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 83
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 21
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 9,
+   "start": "2026-02-23",
+   "end": "2026-03-01",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 148
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 42
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 137,
+      "cum": 1325
+     },
+     "tokyo": {
+      "week": 19,
+      "cum": 247
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 15,
+      "cum": 98
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 18
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 23
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 10,
+   "start": "2026-03-02",
+   "end": "2026-03-08",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 164
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 42
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 100,
+      "cum": 1425
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 273
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 1,
+      "cum": 99
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 21
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 26
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 11,
+   "start": "2026-03-09",
+   "end": "2026-03-15",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 16,
+      "cum": 180
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 47
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 158,
+      "cum": 1583
+     },
+     "tokyo": {
+      "week": 30,
+      "cum": 303
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 10,
+      "cum": 109
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 22
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 28
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 12,
+   "start": "2026-03-16",
+   "end": "2026-03-22",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 22,
+      "cum": 202
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 53
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 111,
+      "cum": 1694
+     },
+     "tokyo": {
+      "week": 15,
+      "cum": 318
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 117
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 23
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 28
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 3
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 13,
+   "start": "2026-03-23",
+   "end": "2026-03-29",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 217
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 59
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 160,
+      "cum": 1854
+     },
+     "tokyo": {
+      "week": 22,
+      "cum": 340
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 24,
+      "cum": 141
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 25
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 34
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 4
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 14,
+   "start": "2026-03-30",
+   "end": "2026-04-05",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 24,
+      "cum": 241
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 59
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 109,
+      "cum": 1963
+     },
+     "tokyo": {
+      "week": 27,
+      "cum": 367
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 155
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 32
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 37
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 6
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 15,
+   "start": "2026-04-06",
+   "end": "2026-04-12",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 22,
+      "cum": 263
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 67
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 160,
+      "cum": 2123
+     },
+     "tokyo": {
+      "week": 24,
+      "cum": 391
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 169
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 32
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 6,
+      "cum": 43
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 6
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 16,
+   "start": "2026-04-13",
+   "end": "2026-04-19",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 282
+     },
+     "tokyo": {
+      "week": 12,
+      "cum": 79
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 131,
+      "cum": 2254
+     },
+     "tokyo": {
+      "week": 26,
+      "cum": 417
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 17,
+      "cum": 186
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 35
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 43
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 7
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 17,
+   "start": "2026-04-20",
+   "end": "2026-04-26",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 21,
+      "cum": 303
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 87
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 109,
+      "cum": 2363
+     },
+     "tokyo": {
+      "week": 40,
+      "cum": 457
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 21,
+      "cum": 207
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 38
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 46
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 7
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 18,
+   "start": "2026-04-27",
+   "end": "2026-05-03",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 26,
+      "cum": 329
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 90
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 166,
+      "cum": 2529
+     },
+     "tokyo": {
+      "week": 22,
+      "cum": 479
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 6,
+      "cum": 213
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 42
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 7,
+      "cum": 53
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 7
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 19,
+   "start": "2026-05-04",
+   "end": "2026-05-10",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 13,
+      "cum": 342
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 98
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 138,
+      "cum": 2667
+     },
+     "tokyo": {
+      "week": 28,
+      "cum": 507
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 20,
+      "cum": 233
+     },
+     "tokyo": {
+      "week": 5,
+      "cum": 47
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 54
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 10
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 20,
+   "start": "2026-05-11",
+   "end": "2026-05-17",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 18,
+      "cum": 360
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 106
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 114,
+      "cum": 2781
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 532
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 0,
+      "cum": 233
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 53
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 7,
+      "cum": 61
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 10
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 21,
+   "start": "2026-05-18",
+   "end": "2026-05-24",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 8,
+      "cum": 368
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 107
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 187,
+      "cum": 2968
+     },
+     "tokyo": {
+      "week": 22,
+      "cum": 554
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 10,
+      "cum": 243
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 55
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 63
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 10
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 22,
+   "start": "2026-05-25",
+   "end": "2026-05-31",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 18,
+      "cum": 386
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 108
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 137,
+      "cum": 3105
+     },
+     "tokyo": {
+      "week": 28,
+      "cum": 582
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 256
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 57
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 63
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 11
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 23,
+   "start": "2026-06-01",
+   "end": "2026-06-07",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 401
+     },
+     "tokyo": {
+      "week": 10,
+      "cum": 118
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 170,
+      "cum": 3275
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 607
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 8,
+      "cum": 264
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 58
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 63
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 11
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 24,
+   "start": "2026-06-08",
+   "end": "2026-06-14",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 420
+     },
+     "tokyo": {
+      "week": 7,
+      "cum": 125
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 162,
+      "cum": 3437
+     },
+     "tokyo": {
+      "week": 42,
+      "cum": 649
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 6,
+      "cum": 270
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 61
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 11,
+      "cum": 74
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 11
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 25,
+   "start": "2026-06-15",
+   "end": "2026-06-21",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 14,
+      "cum": 434
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 131
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 146,
+      "cum": 3583
+     },
+     "tokyo": {
+      "week": 29,
+      "cum": 678
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 9,
+      "cum": 279
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 64
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 77
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 12
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 26,
+   "start": "2026-06-22",
+   "end": "2026-06-28",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 6,
+      "cum": 440
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 134
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 139,
+      "cum": 3722
+     },
+     "tokyo": {
+      "week": 17,
+      "cum": 695
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 4,
+      "cum": 283
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 68
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 1,
+      "cum": 78
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 27,
+   "start": "2026-06-29",
+   "end": "2026-07-05",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 22,
+      "cum": 462
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 140
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 160,
+      "cum": 3882
+     },
+     "tokyo": {
+      "week": 25,
+      "cum": 720
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 2,
+      "cum": 285
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 70
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 4,
+      "cum": 82
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 28,
+   "start": "2026-07-06",
+   "end": "2026-07-12",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 17,
+      "cum": 479
+     },
+     "tokyo": {
+      "week": 8,
+      "cum": 148
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 104,
+      "cum": 3986
+     },
+     "tokyo": {
+      "week": 31,
+      "cum": 751
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 22,
+      "cum": 307
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 71
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 3,
+      "cum": 85
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 13
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 29,
+   "start": "2026-07-13",
+   "end": "2026-07-19",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 27,
+      "cum": 506
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 154
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 175,
+      "cum": 4161
+     },
+     "tokyo": {
+      "week": 20,
+      "cum": 771
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 10,
+      "cum": 317
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 73
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 85
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 30,
+   "start": "2026-07-20",
+   "end": "2026-07-26",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 23,
+      "cum": 529
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 154
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 169,
+      "cum": 4330
+     },
+     "tokyo": {
+      "week": 24,
+      "cum": 795
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 13,
+      "cum": 330
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 76
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 85
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 15
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 31,
+   "start": "2026-07-27",
+   "end": "2026-08-02",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 26,
+      "cum": 555
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 158
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 99,
+      "cum": 4429
+     },
+     "tokyo": {
+      "week": 15,
+      "cum": 810
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 3,
+      "cum": 333
+     },
+     "tokyo": {
+      "week": 3,
+      "cum": 79
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 8,
+      "cum": 93
+     },
+     "tokyo": {
+      "week": 1,
+      "cum": 16
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 32,
+   "start": "2026-08-03",
+   "end": "2026-08-09",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 19,
+      "cum": 574
+     },
+     "tokyo": {
+      "week": 12,
+      "cum": 170
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 119,
+      "cum": 4548
+     },
+     "tokyo": {
+      "week": 20,
+      "cum": 830
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 14,
+      "cum": 347
+     },
+     "tokyo": {
+      "week": 4,
+      "cum": 83
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 0,
+      "cum": 93
+     },
+     "tokyo": {
+      "week": 0,
+      "cum": 16
+     }
+    }
+   }
+  }
+ ]
+}
