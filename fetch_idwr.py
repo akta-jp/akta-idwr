@@ -85,7 +85,7 @@ def decode(raw: bytes) -> str:
 
 
 def fetch(year: int, week: int, timeout: int = 30) -> bytes | None:
-    url = BASE.format(year=year, week=week)
+    url = BASE.format(year=year, week=f"{week:02d}")
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as res:
