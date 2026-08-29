@@ -146,7 +146,7 @@ def parse(text: str) -> dict | None:
         for idx, name in enumerate(names):
             if name in aliases:
                 kind = sub[idx] if idx < len(sub) else ""
-                if kind == "週" and "week" not in found:
+                if kind in ("報告", "報告数", "週", "今週") and "week" not in found:
                     found["week"] = idx
                 elif kind in ("累積", "累積報告数") and "cum" not in found:
                     found["cum"] = idx
@@ -170,8 +170,8 @@ def parse(text: str) -> dict | None:
                 out = {}
                 for key, cols in colmap.items():
                     out[key] = {
-                        "week": to_int(row[cols["week"]]) if cols.get("week", -1) < len(row) else None,
-                        "cum": to_int(row[cols["cum"]]) if cols.get("cum", -1) < len(row) else None,
+                        "week": to_int(row[cols["week"]]) if 0 <= cols.get("week", -1) < len(row) else None,
+                        "cum": to_int(row[cols["cum"]]) if 0 <= cols.get("cum", -1) < len(row) else None,
                     }
                 return out
         return {}
