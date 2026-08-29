@@ -1,0 +1,227 @@
+<!-- ============================================================
+     akta 感染症ダッシュボード（ベータ）
+     このブロックを WordPress の「カスタムHTML」ブロックに貼るだけで動きます。
+     data-src に data.json のURLを指定してください。
+     ============================================================ -->
+<div id="akta-idwr" data-src="https://YOUR-USER.github.io/akta-idwr/data.json">
+  <div class="ai-head">
+    <p class="ai-eyebrow">東京の感染症・週ごとの報告数</p>
+    <h2 class="ai-title">いま、どれくらい？</h2>
+    <p class="ai-lede">国が毎週公表している届出数から、コミュニティに関わりの深い4つを表示しています。</p>
+    <div class="ai-controls" role="group" aria-label="表示する地域">
+      <button type="button" class="ai-seg is-on" data-scope="tokyo">東京都</button>
+      <button type="button" class="ai-seg" data-scope="national">全国</button>
+    </div>
+  </div>
+
+  <div class="ai-status" role="status">読み込み中…</div>
+  <div class="ai-grid" hidden></div>
+
+  <footer class="ai-foot" hidden>
+    <p class="ai-src"></p>
+    <p class="ai-note"></p>
+  </footer>
+</div>
+
+<style>
+#akta-idwr{
+  --ink:#16212B; --muted:#5F6E7B; --line:#D4DAE0; --paper:#FFF; --bg:#E9ECEF;
+  --rose:#B23A63; --amber:#A9700F; --indigo:#3B5EA6;
+  --r:14px;
+  background:var(--bg); color:var(--ink); padding:26px 20px 20px; border-radius:var(--r);
+  font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans","Yu Gothic Medium","Meiryo",system-ui,sans-serif;
+  line-height:1.7; -webkit-font-smoothing:antialiased;
+}
+#akta-idwr *{box-sizing:border-box}
+#akta-idwr .ai-eyebrow{margin:0 0 2px; font-size:12px; letter-spacing:.14em; color:var(--muted)}
+#akta-idwr .ai-title{margin:0 0 6px; font-size:26px; font-weight:700; letter-spacing:.01em; line-height:1.3}
+#akta-idwr .ai-lede{margin:0 0 16px; font-size:13.5px; color:var(--muted); max-width:44em}
+#akta-idwr .ai-controls{display:inline-flex; background:var(--paper); border:1px solid var(--line); border-radius:999px; padding:3px; gap:2px}
+#akta-idwr .ai-seg{
+  appearance:none; border:0; background:transparent; color:var(--muted); cursor:pointer;
+  font:inherit; font-size:13px; padding:6px 16px; border-radius:999px;
+}
+#akta-idwr .ai-seg.is-on{background:var(--ink); color:#fff}
+#akta-idwr .ai-seg:focus-visible{outline:2px solid var(--indigo); outline-offset:2px}
+#akta-idwr .ai-status{margin:18px 0 0; font-size:13px; color:var(--muted)}
+#akta-idwr .ai-grid{display:grid; gap:14px; margin-top:18px; grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+
+#akta-idwr .ai-card{background:var(--paper); border:1px solid var(--line); border-radius:var(--r); padding:18px 18px 14px; position:relative; overflow:hidden; display:flex; flex-direction:column}
+#akta-idwr .ai-card::before{content:""; position:absolute; inset:0 auto 0 0; width:4px; background:var(--c)}
+#akta-idwr .ai-name{margin:0; font-size:16px; font-weight:700; letter-spacing:.02em}
+#akta-idwr .ai-scope{font-size:11.5px; color:var(--muted); font-weight:400; margin-left:.5em}
+#akta-idwr .ai-big{display:flex; align-items:baseline; gap:6px; margin:10px 0 0}
+#akta-idwr .ai-num{font-size:44px; font-weight:700; line-height:1; letter-spacing:-.02em; font-variant-numeric:tabular-nums; color:var(--c)}
+#akta-idwr .ai-unit{font-size:13px; color:var(--muted)}
+#akta-idwr .ai-delta{font-size:12.5px; color:var(--muted); font-variant-numeric:tabular-nums; margin:4px 0 0}
+#akta-idwr .ai-strip{display:block; width:100%; height:64px; margin:12px 0 2px}
+#akta-idwr .ai-axis{display:flex; justify-content:space-between; font-size:11px; color:var(--muted); font-variant-numeric:tabular-nums}
+#akta-idwr .ai-rows{margin:12px 0 0; border-top:1px solid var(--line); padding-top:10px; font-size:13px}
+#akta-idwr .ai-row{display:flex; justify-content:space-between; gap:10px; padding:2px 0}
+#akta-idwr .ai-row dt{color:var(--muted); margin:0}
+#akta-idwr .ai-row dd{margin:0; font-variant-numeric:tabular-nums; font-weight:700; white-space:nowrap}
+#akta-idwr .ai-caveat{margin:6px 0 0; font-size:11.5px; line-height:1.6; color:var(--muted); border-left:2px solid var(--line); padding-left:8px}
+#akta-idwr details{margin-top:auto; padding-top:10px; font-size:12.5px}
+#akta-idwr summary{cursor:pointer; color:var(--muted)}
+#akta-idwr summary:focus-visible{outline:2px solid var(--indigo); outline-offset:2px}
+#akta-idwr table{width:100%; border-collapse:collapse; margin-top:8px; font-size:12px; font-variant-numeric:tabular-nums}
+#akta-idwr th,#akta-idwr td{text-align:right; padding:3px 4px; border-bottom:1px solid var(--line)}
+#akta-idwr th:first-child,#akta-idwr td:first-child{text-align:left}
+#akta-idwr .ai-tablewrap{max-height:210px; overflow:auto}
+
+#akta-idwr .ai-demo{display:inline-block; margin-top:10px; font-size:12px; background:#FFF3CD; border:1px solid #E4CF8A; color:#6B5310; padding:4px 10px; border-radius:999px}
+#akta-idwr .ai-foot{margin-top:16px; font-size:11.5px; color:var(--muted)}
+#akta-idwr .ai-foot p{margin:2px 0}
+#akta-idwr .ai-foot a{color:var(--muted)}
+@media (max-width:520px){
+  #akta-idwr{padding:20px 14px 14px}
+  #akta-idwr .ai-title{font-size:22px}
+  #akta-idwr .ai-num{font-size:38px}
+}
+</style>
+
+<script>
+(function () {
+  var root = document.getElementById('akta-idwr');
+  if (!root || root.dataset.init) return;
+  root.dataset.init = '1';
+
+  // note … カードに出す一言（aktaのメッセージング。ここは必ず自分たちの言葉に）
+  // caveat … データの読み方の但し書き（消さないこと）
+  var META = {
+    hiv:         { label: 'HIV',         color: '#1B7268',
+                   note: '検査で分かります。早く分かるほど、選べる方法が増えます。',
+                   caveat: '国への届出（後天性免疫不全症候群）の数です。HIV感染者とAIDS患者の合計で、内訳は含まれません。内訳と確定値はエイズ動向委員会の報告をご覧ください。' },
+    syphilis:    { label: '梅毒',        color: '#B23A63',
+                   note: '症状が出ないこともあり、検査でしか分かりません。' },
+    hepatitis_a: { label: 'A型肝炎',     color: '#A9700F',
+                   note: 'ワクチンで防げます。' },
+    mpox:        { label: 'エムポックス', color: '#3B5EA6',
+                   note: '日本ではワクチンは供給されていません。気になることがあれば医療機関にご相談ください。' }
+  };
+  var ORDER = ['hiv', 'syphilis', 'hepatitis_a', 'mpox'];
+  var SPAN = 52;
+
+  var statusEl = root.querySelector('.ai-status');
+  var gridEl   = root.querySelector('.ai-grid');
+  var footEl   = root.querySelector('.ai-foot');
+  var scope = 'tokyo';
+  var DATA = null;
+
+  var nf = function (n) { return (n == null) ? '—' : Number(n).toLocaleString('ja-JP'); };
+
+  function fail(msg) {
+    statusEl.hidden = false;
+    statusEl.textContent = msg;
+  }
+
+  function strip(series, color) {
+    // 週ごとの縦ストローク。最新週だけ太く、年の変わり目にヘアラインを引く。
+    var n = series.length, W = 300, H = 64, pad = 6;
+    var max = 0, i;
+    for (i = 0; i < n; i++) max = Math.max(max, series[i].v || 0);
+    var step = W / n, bw = Math.max(1.6, step * 0.62);
+    var svg = ['<svg class="ai-strip" viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-hidden="true">'];
+    svg.push('<line x1="0" y1="' + (H - 4) + '" x2="' + W + '" y2="' + (H - 4) + '" stroke="#D4DAE0" stroke-width="1"/>');
+    for (i = 0; i < n; i++) {
+      var d = series[i], x = i * step + (step - bw) / 2;
+      if (d.week === 1 && i > 0) {
+        svg.push('<line x1="' + (i * step) + '" y1="2" x2="' + (i * step) + '" y2="' + (H - 4) + '" stroke="#C9D0D7" stroke-width="1" stroke-dasharray="2 3"/>');
+      }
+      var h = max > 0 ? Math.max(d.v > 0 ? 2 : 0, (d.v / max) * (H - pad - 6)) : 0;
+      var last = (i === n - 1);
+      svg.push('<rect x="' + x.toFixed(2) + '" y="' + (H - 4 - h).toFixed(2) + '" width="' + bw.toFixed(2) +
+               '" height="' + h.toFixed(2) + '" rx="' + (bw / 2).toFixed(2) + '" fill="' + color + '" opacity="' + (last ? 1 : .42) + '"/>');
+    }
+    svg.push('</svg>');
+    return svg.join('');
+  }
+
+  function table(series) {
+    var rows = series.slice().reverse().slice(0, 26).map(function (d) {
+      return '<tr><td>' + d.year + '年 第' + d.week + '週</td><td>' + nf(d.v) + '</td></tr>';
+    }).join('');
+    return '<details><summary>数値表を見る（直近26週）</summary><div class="ai-tablewrap"><table>' +
+           '<thead><tr><th>週</th><th>報告数</th></tr></thead><tbody>' + rows + '</tbody></table></div></details>';
+  }
+
+  function render() {
+    var weeks = DATA.weeks;
+    if (!weeks || !weeks.length) return fail('表示できるデータがありません。data.json を確認してください。');
+    var latest = weeks[weeks.length - 1];
+    var scopeLabel = scope === 'tokyo' ? '東京都' : '全国';
+
+    gridEl.innerHTML = ORDER.filter(function (k) { return latest.metrics && latest.metrics[k]; }).map(function (k) {
+      var meta = META[k];
+      var series = weeks.slice(-SPAN).map(function (w) {
+        var m = w.metrics[k] && w.metrics[k][scope];
+        return { year: w.year, week: w.week, v: m ? m.week : null };
+      });
+      var cur = latest.metrics[k][scope] || {};
+      var prev = weeks.length > 1 ? (weeks[weeks.length - 2].metrics[k] || {})[scope] : null;
+      var diff = (cur.week != null && prev && prev.week != null) ? cur.week - prev.week : null;
+
+      // 前年同週の累積と比べる
+      var lastYear = null;
+      for (var i = 0; i < weeks.length; i++) {
+        if (weeks[i].year === latest.year - 1 && weeks[i].week === latest.week) { lastYear = weeks[i]; break; }
+      }
+      var yoy = null;
+      if (lastYear && lastYear.metrics[k] && lastYear.metrics[k][scope] && lastYear.metrics[k][scope].cum) {
+        var base = lastYear.metrics[k][scope].cum;
+        if (base > 0 && cur.cum != null) yoy = Math.round((cur.cum / base - 1) * 100);
+      }
+
+      var allZero = series.every(function (d) { return !d.v; });
+
+      return '<article class="ai-card" style="--c:' + meta.color + '">' +
+        '<h3 class="ai-name">' + meta.label + '<span class="ai-scope">' + scopeLabel + '</span></h3>' +
+        '<p class="ai-big"><span class="ai-num">' + nf(cur.week) + '</span><span class="ai-unit">人 / 今週</span></p>' +
+        '<p class="ai-delta">' + (diff == null ? '&nbsp;' : '前の週から ' + (diff > 0 ? '+' : '') + nf(diff) + '人') + '</p>' +
+        strip(series, meta.color) +
+        '<div class="ai-axis"><span>' + series[0].year + '年 第' + series[0].week + '週</span><span>今週</span></div>' +
+        (allZero ? '<p class="ai-delta">この期間の報告は0件です。</p>' : '') +
+        '<dl class="ai-rows">' +
+          '<div class="ai-row"><dt>今年の累計</dt><dd>' + nf(cur.cum) + ' 人</dd></div>' +
+          (yoy == null ? '' : '<div class="ai-row"><dt>去年の同じ時期</dt><dd>' + (yoy > 0 ? '+' : '') + yoy + '%</dd></div>') +
+        '</dl>' +
+        '<p class="ai-delta">' + meta.note + '</p>' +
+        (meta.caveat ? '<p class="ai-caveat">' + meta.caveat + '</p>' : '') +
+        table(series) +
+      '</article>';
+    }).join('');
+
+    var src = DATA.source || {};
+    footEl.querySelector('.ai-src').innerHTML =
+      '集計期間：' + latest.year + '年 第' + latest.week + '週（' + latest.start + '〜' + latest.end + '）／ ' +
+      '出典：<a href="' + (src.url || '#') + '" target="_blank" rel="noopener">' + (src.name || 'IDWR') + '</a>' +
+      (DATA.generated_at ? '　最終更新：' + DATA.generated_at.slice(0, 10) : '');
+    footEl.querySelector('.ai-note').textContent = src.note || '';
+    if (DATA.demo) {
+      gridEl.insertAdjacentHTML('beforebegin', '<p class="ai-demo">デモデータを表示しています（実際の報告数ではありません）</p>');
+    }
+    statusEl.hidden = true;
+    gridEl.hidden = false;
+    footEl.hidden = false;
+  }
+
+  root.querySelectorAll('.ai-seg').forEach(function (b) {
+    b.addEventListener('click', function () {
+      root.querySelectorAll('.ai-seg').forEach(function (o) { o.classList.remove('is-on'); });
+      b.classList.add('is-on');
+      scope = b.dataset.scope;
+      if (DATA) render();
+    });
+  });
+
+  var inline = document.getElementById('akta-idwr-fallback');
+  if (inline) {
+    try { DATA = JSON.parse(inline.textContent); render(); return; } catch (e) {}
+  }
+
+  fetch(root.dataset.src, { cache: 'no-cache' })
+    .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+    .then(function (j) { DATA = j; render(); })
+    .catch(function () { fail('データを読み込めませんでした。data.json のURLと公開設定を確認してください。'); });
+})();
+</script>

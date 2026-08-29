@@ -1,0 +1,41 @@
+name: Update IDWR data
+
+on:
+  schedule:
+    # IDWR速報は毎週火曜に更新される。日本時間の火曜21時（UTC 12:00）に実行。
+    - cron: "0 12 * * 2"
+  workflow_dispatch:
+    inputs:
+      years:
+        description: "総ざらいする年（スペース区切り。初回だけ 2024 2025 2026 と入力。通常は空欄でOK）"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch IDWR and rebuild data.json
+        run: |
+          if [ -n "${{ github.event.inputs.years }}" ]; then
+            python3 fetch_idwr.py --out data.json --years ${{ github.event.inputs.years }}
+          else
+            python3 fetch_idwr.py --out data.json
+          fi
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "akta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.json
+          git diff --staged --quiet || git commit -m "data: IDWR update ($(date -u +%Y-%m-%d))"
+          git push
