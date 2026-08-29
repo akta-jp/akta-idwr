@@ -102,7 +102,7 @@ def fetch(year: int, week: int, timeout: int = 30) -> bytes | None:
 
 def parse(text: str) -> dict | None:
     """1週分のCSV文字列を {'year':..,'week':..,'metrics':{...}} に変換する。"""
-    rows = list(csv.reader(io.StringIO(text)))
+    rows = list(csv.reader(io.StringIO(text.replace("\r\n", "\n").replace("\r", "\n"), newline="")))
     if not rows:
         return None
 
