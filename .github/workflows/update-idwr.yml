@@ -24,6 +24,11 @@ jobs:
         with:
           python-version: "3.12"
 
+      # パーサが壊れたまま取得に進まないための門番。
+      # JIHSがCSVの書式を変えたら、変な数字を公開する前にここで赤く落ちる。
+      - name: Self-test the parser
+        run: python3 test_parse.py
+
       - name: Fetch IDWR and rebuild data.json
         run: |
           if [ -n "${{ github.event.inputs.years }}" ]; then
