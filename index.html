@@ -70,6 +70,8 @@
 #akta-idwr .ai-row{display:flex; justify-content:space-between; gap:10px; padding:2px 0}
 #akta-idwr .ai-row dt{color:var(--muted); margin:0}
 #akta-idwr .ai-row dd{margin:0; font-variant-numeric:tabular-nums; font-weight:700; white-space:nowrap}
+/* 過去年の行は主役ではない。太字を外してグレーに落とし、今年の数字との階層をつける。 */
+#akta-idwr .ai-row.is-past dd{font-weight:400; color:var(--muted)}
 #akta-idwr .ai-caveat{margin:6px 0 0; font-size:11.5px; line-height:1.6; color:var(--muted); border-left:2px solid var(--line); padding-left:8px}
 #akta-idwr details{margin-top:auto; padding-top:10px; font-size:12.5px}
 #akta-idwr summary{cursor:pointer; color:var(--muted)}
@@ -111,6 +113,9 @@
   };
   var ORDER = ['hiv', 'syphilis', 'hepatitis_a', 'mpox'];
   var SPAN = 52;
+  // 過去何年分の「同じ週までの累計」を並置するか。
+  // データが無い年は自動的に飛ばすので、大きくしても壊れません（2023年以前は要バックフィル）。
+  var PAST_YEARS = 3;
 
   var statusEl = root.querySelector('.ai-status');
   var gridEl   = root.querySelector('.ai-grid');
@@ -171,15 +176,17 @@
       var prev = weeks.length > 1 ? (weeks[weeks.length - 2].metrics[k] || {})[scope] : null;
       var diff = (cur.week != null && prev && prev.week != null) ? cur.week - prev.week : null;
 
-      // 前年同週の累積と比べる
-      var lastYear = null;
-      for (var i = 0; i < weeks.length; i++) {
-        if (weeks[i].year === latest.year - 1 && weeks[i].week === latest.week) { lastYear = weeks[i]; break; }
-      }
-      var yoy = null;
-      if (lastYear && lastYear.metrics[k] && lastYear.metrics[k][scope] && lastYear.metrics[k][scope].cum) {
-        var base = lastYear.metrics[k][scope].cum;
-        if (base > 0 && cur.cum != null) yoy = Math.round((cur.cum / base - 1) * 100);
+      // 過去年の「同じ週までの累計」を実数で並べる。
+      // 比率（前年比%）は母数の小さい疾患で暴れるうえ、何と何を比べたのかが読み手に見えない。
+      // 実数を並べれば、読み手が自分で比較できる。
+      var past = [];
+      for (var y = 1; y <= PAST_YEARS; y++) {
+        var ty = latest.year - y, hit = null;
+        for (var i = 0; i < weeks.length; i++) {
+          if (weeks[i].year === ty && weeks[i].week === latest.week) { hit = weeks[i]; break; }
+        }
+        var pm = hit && hit.metrics[k] ? hit.metrics[k][scope] : null;
+        if (pm && pm.cum != null) past.push({ year: ty, cum: pm.cum });
       }
 
       var allZero = series.every(function (d) { return !d.v; });
@@ -192,8 +199,10 @@
         '<div class="ai-axis"><span>' + series[0].year + '年 第' + series[0].week + '週</span><span>今週</span></div>' +
         (allZero ? '<p class="ai-delta">この期間の報告は0件です。</p>' : '') +
         '<dl class="ai-rows">' +
-          '<div class="ai-row"><dt>今年の累計</dt><dd>' + nf(cur.cum) + ' 人</dd></div>' +
-          (yoy == null ? '' : '<div class="ai-row"><dt>去年の同じ時期</dt><dd>' + (yoy > 0 ? '+' : '') + yoy + '%</dd></div>') +
+          '<div class="ai-row"><dt>今年の累計（第' + latest.week + '週まで）</dt><dd>' + nf(cur.cum) + ' 人</dd></div>' +
+          past.map(function (p) {
+            return '<div class="ai-row is-past"><dt>' + p.year + '年 同じ週まで</dt><dd>' + nf(p.cum) + ' 人</dd></div>';
+          }).join('') +
         '</dl>' +
         '<p class="ai-delta">' + meta.note + '</p>' +
         (meta.caveat ? '<p class="ai-caveat">' + meta.caveat + '</p>' : '') +
