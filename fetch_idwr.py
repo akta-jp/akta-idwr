@@ -218,9 +218,12 @@ def main() -> int:
     else:
         years = sorted({today.year - 1, today.year})
 
-    # 再取得対象（末尾N週）は have から一旦外す
+    # 再取得対象（末尾N週）は have から一旦外す。
+    # ただし今回取りに行く年の週だけ。--years 2023 のような部分バックフィルで
+    # 2026年の末尾4週を落としたまま取り直さず、data.json から消える事故を防ぐ。
     if have and args.recheck > 0:
-        for k in sorted(have)[-args.recheck:]:
+        yset = set(years)
+        for k in [k for k in sorted(have) if k[0] in yset][-args.recheck:]:
             have.pop(k, None)
 
     targets: list[tuple[int, int]] = []
