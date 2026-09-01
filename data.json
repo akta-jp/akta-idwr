@@ -1,6 +1,6 @@
 {
  "demo": false,
- "generated_at": "2026-08-31T08:14:01+00:00",
+ "generated_at": "2026-09-01T12:02:49+00:00",
  "source": {
   "name": "国立健康危機管理研究機構（JIHS）感染症発生動向調査 週報（IDWR）速報データ",
   "url": "https://id-info.jihs.go.jp/surveillance/idwr/index.html",
@@ -9071,6 +9071,54 @@
      "tokyo": {
       "week": 2,
       "cum": 97
+     }
+    }
+   }
+  },
+  {
+   "year": 2026,
+   "week": 34,
+   "start": "2026-08-17",
+   "end": "2026-08-23",
+   "metrics": {
+    "hiv": {
+     "national": {
+      "week": 15,
+      "cum": 612
+     },
+     "tokyo": {
+      "week": 6,
+      "cum": 181
+     }
+    },
+    "syphilis": {
+     "national": {
+      "week": 195,
+      "cum": 7467
+     },
+     "tokyo": {
+      "week": 46,
+      "cum": 1782
+     }
+    },
+    "hepatitis_a": {
+     "national": {
+      "week": 21,
+      "cum": 244
+     },
+     "tokyo": {
+      "week": 9,
+      "cum": 111
+     }
+    },
+    "mpox": {
+     "national": {
+      "week": 2,
+      "cum": 112
+     },
+     "tokyo": {
+      "week": 2,
+      "cum": 99
      }
     }
    }
