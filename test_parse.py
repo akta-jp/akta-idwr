@@ -19,6 +19,10 @@ CIでは .github/workflows/update-idwr.yml から呼んでもよい。
 6. 列の位置は年度によりずれる。列番号でハードコードしてはいけない。
 7. URLの週番号は2桁ゼロ埋め（/2025/01/2025-01-zensu.csv）。
    ゼロ埋めを落とすと第1〜9週が静かに欠落する。
+8. URL体系が2023年で分断されている。2022年以前は
+   /niid/images/idwr/sokuho/idwr-{y}/{y}{ww}/{y}-{ww}-zensu.csv、
+   2023年以降は /surveillance/idwr/provisional/{y}/{ww}/{y}-{ww}-zensu.csv。
+   片方だけ見ていると、過去分が丸ごと静かに欠落する。
 """
 
 from __future__ import annotations
@@ -180,6 +184,78 @@ def test_url_zero_padding() -> None:
           seen[1] if len(seen) > 1 else "(呼ばれていない)")
 
 
+def _seen_urls(calls: list[tuple[int, int]]) -> list[str]:
+    """F.fetch を叩いて、実際に要求されたURLだけを回収する（通信はしない）。"""
+    seen: list[str] = []
+
+    class FakeRes:
+        def read(self) -> bytes:
+            return b""
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *a):
+            return False
+
+    def fake_urlopen(req, timeout=None):
+        seen.append(req.full_url)
+        return FakeRes()
+
+    with mock.patch("urllib.request.urlopen", fake_urlopen):
+        for y, w in calls:
+            F.fetch(y, w)
+    return seen
+
+
+def test_url_legacy_generation() -> None:
+    """2022年以前は旧系統（/niid/images/idwr/sokuho/...）を叩くこと。"""
+    u = F.build_url(2022, 42)
+    check("旧系統: 2022年第42週のパス",
+          u == "https://id-info.jihs.go.jp/niid/images/idwr/sokuho"
+               "/idwr-2022/202242/2022-42-zensu.csv", u)
+
+    u1 = F.build_url(2021, 1)
+    check("旧系統: 第1週もディレクトリ・ファイル名ともゼロ埋め",
+          u1.endswith("/idwr-2021/202101/2021-01-zensu.csv"), u1)
+
+    check("旧系統: 収録最古 2012年第37週",
+          F.build_url(2012, 37).endswith("/idwr-2012/201237/2012-37-zensu.csv"),
+          F.build_url(2012, 37))
+
+    # fetch() 経由でも同じURLが出ること（build_url を素通りしていないか）
+    seen = _seen_urls([(2022, 42)])
+    check("旧系統: fetch() が build_url を使っている",
+          seen and seen[0] == u, seen[0] if seen else "(呼ばれていない)")
+
+
+def test_url_boundary_2023() -> None:
+    """2023年第1週で新旧が切り替わること。"""
+    legacy = F.build_url(2022, 52)
+    current = F.build_url(2023, 1)
+    check("2022年第52週は旧系統", "/niid/images/idwr/sokuho/" in legacy, legacy)
+    check("2023年第1週は新系統", "/surveillance/idwr/provisional/" in current, current)
+    check("2023年第1週のパス",
+          current.endswith("/provisional/2023/01/2023-01-zensu.csv"), current)
+    check("2026年は新系統のまま",
+          "/surveillance/idwr/provisional/" in F.build_url(2026, 33),
+          F.build_url(2026, 33))
+    check("新旧で系統が重ならない",
+          ("/niid/" in legacy) and ("/niid/" not in current))
+
+
+def test_url_earliest_guard() -> None:
+    """収録開始（2012年第37週）より前は、そもそもリクエストしないこと。"""
+    seen = _seen_urls([(2012, 36), (2011, 52), (2012, 37)])
+    check("2012年第36週は叩かない",
+          not any("2012-36" in u for u in seen), repr(seen))
+    check("2011年は叩かない",
+          not any("/idwr-2011/" in u for u in seen), repr(seen))
+    check("2012年第37週は叩く",
+          any(u.endswith("/2012-37-zensu.csv") for u in seen), repr(seen))
+    check("ガードに掛かった週は None を返す", F.fetch(2012, 36) is None)
+
+
 def test_to_int() -> None:
     check("to_int: 通常", F.to_int("123") == 123)
     check("to_int: カンマ区切り", F.to_int("1,234") == 1234)
@@ -204,6 +280,9 @@ def main() -> int:
         ("週次見出しの表記ゆれ", test_week_label_variants),
         ("列位置の非依存", test_column_shift),
         ("URLのゼロ埋め", test_url_zero_padding),
+        ("旧系統URLの生成", test_url_legacy_generation),
+        ("2023年のURL体系の境界", test_url_boundary_2023),
+        ("収録開始より前のガード", test_url_earliest_guard),
         ("to_int", test_to_int),
         ("壊れた入力", test_garbage_returns_none),
     ]

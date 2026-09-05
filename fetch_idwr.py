@@ -11,9 +11,18 @@ akta ダッシュボード用の data.json を生成する。
       https://id-info.jihs.go.jp/surveillance/idwr/index.html
 ※ 掲載値は速報値であり、後日修正されることがある。
 
+URL体系について（重要）:
+    JIHSサイトの速報CSVは 2023年を境に2系統に分かれている。
+      2023年第1週以降 : /surveillance/idwr/provisional/{y}/{ww}/{y}-{ww}-zensu.csv
+      2022年第52週以前: /niid/images/idwr/sokuho/idwr-{y}/{y}{ww}/{y}-{ww}-zensu.csv
+    どちらもShift-JISで、ヘッダー構造・列構成・疾患名の表記は同一。
+    パーサは共通で通る。build_url() が年で自動的に切り替える。
+    収録の最古は 2012年第37週（2012年第36週は404）。
+
 使い方:
     python3 fetch_idwr.py                 # 差分更新（既存 data.json に追記）
     python3 fetch_idwr.py --years 2024 2025 2026   # 指定年を総ざらい
+    python3 fetch_idwr.py --past-years 5  # 今年＋過去5年を総ざらい（旧系統も辿る）
     python3 fetch_idwr.py --out data.json
 """
 
@@ -32,7 +41,21 @@ import unicodedata
 import urllib.error
 import urllib.request
 
-BASE = "https://id-info.jihs.go.jp/surveillance/idwr/provisional/{year}/{week}/{year}-{week}-zensu.csv"
+# 現行系統（2023年第1週以降）
+BASE_CURRENT = (
+    "https://id-info.jihs.go.jp/surveillance/idwr/provisional"
+    "/{year}/{week}/{year}-{week}-zensu.csv"
+)
+# 旧系統（2022年第52週以前）。ディレクトリだけ {year}{week} の連結である点に注意。
+BASE_LEGACY = (
+    "https://id-info.jihs.go.jp/niid/images/idwr/sokuho"
+    "/idwr-{year}/{year}{week}/{year}-{week}-zensu.csv"
+)
+# この年までが旧系統。2023年から現行系統に切り替わる。
+LEGACY_LAST_YEAR = 2022
+# 旧系統の収録開始。これより前は存在しないので、そもそも叩かない。
+EARLIEST = (2012, 37)
+
 UA = "akta-dashboard/0.1 (+https://akta.jp/ community HIV/STI information; contact: akta)"
 
 # 出力キー -> CSV上の疾患名（NFKC正規化後の完全一致で照合。表記ゆれは複数登録）
@@ -84,8 +107,22 @@ def decode(raw: bytes) -> str:
     return raw.decode("cp932", errors="replace")
 
 
+def build_url(year: int, week: int) -> str:
+    """(年, 週) から速報CSVのURLを組み立てる。
+
+    2023年を境にURL体系が変わっているため、年で系統を切り替える。
+    週番号はどちらの系統も2桁ゼロ埋め（旧系統はディレクトリ名も同様）。
+    """
+    w = f"{week:02d}"
+    base = BASE_LEGACY if year <= LEGACY_LAST_YEAR else BASE_CURRENT
+    return base.format(year=year, week=w)
+
+
 def fetch(year: int, week: int, timeout: int = 30) -> bytes | None:
-    url = BASE.format(year=year, week=f"{week:02d}")
+    # 収録開始より前は存在しないので、無駄なリクエストを打たない
+    if (year, week) < EARLIEST:
+        return None
+    url = build_url(year, week)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=timeout) as res:
@@ -205,6 +242,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="data.json")
     ap.add_argument("--years", type=int, nargs="*", help="総ざらいする年（例: 2024 2025 2026）")
+    ap.add_argument("--past-years", type=int, default=None, metavar="N",
+                    help="今年からN年さかのぼって総ざらい（--years より優先度は低い）")
     ap.add_argument("--recheck", type=int, default=4, help="末尾から再取得する週数（速報値の修正取り込み）")
     ap.add_argument("--sleep", type=float, default=1.0, help="リクエスト間隔（秒）")
     args = ap.parse_args()
@@ -215,8 +254,12 @@ def main() -> int:
     today = dt.date.today()
     if args.years:
         years = args.years
+    elif args.past_years is not None:
+        years = list(range(today.year - args.past_years, today.year + 1))
     else:
         years = sorted({today.year - 1, today.year})
+    # 収録開始年より前は捨てる
+    years = [y for y in years if y >= EARLIEST[0]]
 
     # 再取得対象（末尾N週）は have から一旦外す。
     # ただし今回取りに行く年の週だけ。--years 2023 のような部分バックフィルで
@@ -230,6 +273,8 @@ def main() -> int:
     for y in years:
         last = 53 if y < today.year else min(53, today.isocalendar().week)
         for w in range(1, last + 1):
+            if (y, w) < EARLIEST:
+                continue
             if (y, w) not in have:
                 targets.append((y, w))
 
